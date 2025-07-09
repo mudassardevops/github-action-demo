@@ -11,8 +11,7 @@ jobs:
   greeting_job:
     runs-on: ubuntu-latest
     steps:
-      - name: "Mudassar"
-        run: echo "$Greeting $First_Name is using $cloud"
+      - name: "Say Hello Mudassar"
+        run: echo "${{ env.Greeting }} ${{ env.First_Name }} is using ${{ env.cloud }}"
         env:
           First_Name: Vishal
-          Greeting: Hello
